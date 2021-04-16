@@ -1,0 +1,17 @@
+[$Version]
+update_info=kxkb_variants.upd:split-variants
+
+[Layout]
+DisplayNames=,
+LayoutList=cz,us
+LayoutLoopCount=-1
+Model=pc105
+Options=terminate:ctrl_alt_bksp,grp:alt_shift_toggle
+ResetOldOptions=true
+ShowFlag=false
+ShowLabel=true
+ShowLayoutIndicator=true
+ShowSingle=false
+SwitchMode=Global
+Use=true
+VariantList=,

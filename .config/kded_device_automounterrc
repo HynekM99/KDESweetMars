@@ -1,0 +1,49 @@
+[Devices][/org/freedesktop/UDisks2/block_devices/nvme0n1p1]
+EverMounted=true
+Icon=drive-harddisk-root
+LastNameSeen=224,1 GiB Pevný disk
+LastSeenMounted=true
+
+[Devices][/org/freedesktop/UDisks2/block_devices/sda1]
+EverMounted=true
+Icon=drive-harddisk
+LastNameSeen=System Reserved
+LastSeenMounted=false
+
+[Devices][/org/freedesktop/UDisks2/block_devices/sda2]
+EverMounted=true
+Icon=drive-harddisk
+LastNameSeen=232,3 GiB Pevný disk
+LastSeenMounted=true
+
+[Devices][/org/freedesktop/UDisks2/block_devices/sda3]
+EverMounted=true
+Icon=drive-harddisk
+LastNameSeen=542,0 MiB Pevný disk
+LastSeenMounted=false
+
+[Devices][/org/freedesktop/UDisks2/block_devices/sdb1]
+EverMounted=true
+Icon=drive-harddisk
+LastNameSeen=232,9 GiB Pevný disk
+LastSeenMounted=true
+
+[Devices][/org/freedesktop/UDisks2/block_devices/sdc1]
+EverMounted=true
+Icon=drive-harddisk
+LastNameSeen=Místní disk
+LastSeenMounted=true
+
+[Devices][/org/freedesktop/UDisks2/block_devices/sdd1]
+EverMounted=true
+Icon=drive-removable-media-usb-pendrive
+LastNameSeen=ARCH_202103
+LastSeenMounted=false
+
+[Devices][/org/freedesktop/UDisks2/block_devices/sdd2]
+Icon=drive-removable-media-usb-pendrive
+LastNameSeen=ARCHISO_EFI
+LastSeenMounted=false
+
+[General]
+AutomountEnabled=true

@@ -1,0 +1,5 @@
+[Bell]
+VisibleBellInvert=false
+
+[ScreenReader]
+Enabled=false

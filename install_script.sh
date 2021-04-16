@@ -1,0 +1,1 @@
+pacman -S --needed base-devel git alacritty chromium rofi gimp code ufw nitrogen neofetch picom redshift htop vlc powerdevil firefox dolphin dolphin-plugins filelight kcalc kdeconnect kdf kget kmix ksystemlog khotkeys okular partitionmanager print-manager spectacle plasma kwalletmanager qt5-xmlpatterns latte-dock

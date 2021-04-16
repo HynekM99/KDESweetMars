@@ -1,0 +1,82 @@
+[KFileDialog Settings]
+Recent Files[$e]=alien-minimal.jpg,file:$HOME/Obrázky/sunset-2.webp,file:$HOME/Obrázky/vpb361yfed551.webp,file:$HOME/Obrázky/sunset.jpg
+Recent URLs[$e]=file:$HOME/Obrázky/,file:$HOME/,file:$HOME/Dokumenty/
+detailViewIconSize=16
+
+[Notification Messages]
+really_clear_history=true
+
+[PlasmaTransientsConfig]
+PreloadWeight=42
+
+[PlasmaViews][Panel 1]
+alignment=1
+panelVisibility=0
+
+[PlasmaViews][Panel 1][Defaults]
+maxLength=1920
+minLength=1920
+offset=0
+thickness=28
+
+[PlasmaViews][Panel 1][Horizontal1366]
+maxLength=1366
+minLength=1366
+offset=0
+thickness=24
+
+[PlasmaViews][Panel 1][Horizontal1920]
+maxLength=1920
+minLength=1920
+thickness=28
+
+[PlasmaViews][Panel 125][Defaults]
+thickness=30
+
+[PlasmaViews][Panel 125][Horizontal1920]
+thickness=30
+
+[PlasmaViews][Panel 43]
+alignment=132
+panelVisibility=2
+
+[PlasmaViews][Panel 43][Defaults]
+maxLength=1036
+minLength=482
+offset=0
+thickness=50
+
+[PlasmaViews][Panel 43][Horizontal1366]
+maxLength=1036
+minLength=482
+offset=36
+thickness=40
+
+[PlasmaViews][Panel 43][Horizontal1920]
+thickness=44
+
+[PlasmaViews][Panel 43][Vertical1080]
+offset=0
+thickness=50
+
+[PlasmaViews][Panel 68]
+alignment=132
+panelVisibility=3
+
+[PlasmaViews][Panel 68][Defaults]
+maxLength=174
+minLength=142
+thickness=50
+
+[PlasmaViews][Panel 68][Vertical768]
+maxLength=174
+minLength=142
+thickness=50
+
+[ScreenConnectors]
+0=DisplayPort-1
+1=HDMI1
+2=HDMI-A-1
+
+[Updates]
+performed=/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/obsolete_kickoffrc.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/unlock_widgets.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/containmentactions_middlebutton.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/move_desktop_layout_config.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/systemloadviewer_systemmonitor.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/maintain_existing_desktop_icon_sizes.js
