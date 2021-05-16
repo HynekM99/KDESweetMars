@@ -7,6 +7,9 @@ autoload=true
 [Module-bluedevil]
 autoload=false
 
+[Module-browserintegrationreminder]
+autoload=false
+
 [Module-colorcorrectlocationupdater]
 autoload=true
 

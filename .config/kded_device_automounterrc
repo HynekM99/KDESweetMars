@@ -25,7 +25,7 @@ LastSeenMounted=false
 [Devices][/org/freedesktop/UDisks2/block_devices/sdb1]
 EverMounted=true
 Icon=drive-harddisk
-LastNameSeen=232,9 GiB Pevný disk
+LastNameSeen=Data
 LastSeenMounted=true
 
 [Devices][/org/freedesktop/UDisks2/block_devices/sdc1]
@@ -36,14 +36,18 @@ LastSeenMounted=true
 
 [Devices][/org/freedesktop/UDisks2/block_devices/sdd1]
 EverMounted=true
-Icon=drive-removable-media-usb-pendrive
-LastNameSeen=ARCH_202103
-LastSeenMounted=false
+Icon=drive-harddisk
+LastNameSeen=Data
+LastSeenMounted=true
 
 [Devices][/org/freedesktop/UDisks2/block_devices/sdd2]
 Icon=drive-removable-media-usb-pendrive
 LastNameSeen=ARCHISO_EFI
 LastSeenMounted=false
+
+[Devices][/org/kde/fstab/fuse.sshfs/run/user/1000/e3bbed406baeb50f]
+EverMounted=true
+LastSeenMounted=true
 
 [General]
 AutomountEnabled=true

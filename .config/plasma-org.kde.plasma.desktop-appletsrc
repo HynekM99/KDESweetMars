@@ -7,7 +7,7 @@ showAppsByName=false
 
 [ActionPlugins][0][RightButton;NoModifier]
 _add panel=true
-_context=false
+_context=true
 _lock_screen=false
 _logout=true
 _run_command=false
@@ -41,44 +41,95 @@ immutability=1
 plugin=org.kde.plasma.betterinlineclock
 
 [Containments][1][Applets][115][Configuration]
-PreloadWeight=2
+PreloadWeight=0
 
 [Containments][1][Applets][115][Configuration][Appearance]
 customDateFormat=ddd dd.MM.
 customSpacing=2.6851851851851856
 dateFormat=customDate
 fixedFont=true
-fontSize=14
+fontFamily=Zekton
+fontSize=15
 showSeparator=false
 showWeekNumbers=true
+use24hFormat=2
 
 [Containments][1][Applets][115][Configuration][ConfigDialog]
 DialogHeight=540
 DialogWidth=720
 
-[Containments][1][Applets][132]
+[Containments][1][Applets][143]
 immutability=1
-plugin=org.kde.plasma.taskmanager
+plugin=org.kde.plasma.kickoff
 
-[Containments][1][Applets][132][Configuration]
-PreloadWeight=0
+[Containments][1][Applets][143][Configuration]
+PreloadWeight=12
 
-[Containments][1][Applets][132][Configuration][ConfigDialog]
+[Containments][1][Applets][143][Configuration][ConfigDialog]
 DialogHeight=540
 DialogWidth=720
 
-[Containments][1][Applets][132][Configuration][General]
-launchers=
+[Containments][1][Applets][143][Configuration][General]
+alphaSort=true
+favoritesPortedToKAstats=true
+icon=start-here
+switchTabsOnHover=true
+systemApplications=systemsettings.desktop,org.kde.kinfocenter.desktop
+systemFavorites=suspend\\,hibernate\\,reboot\\,shutdown
+
+[Containments][1][Applets][145]
+immutability=1
+plugin=org.kde.kdeconnect
+
+[Containments][1][Applets][145][Configuration]
+PreloadWeight=0
+
+[Containments][1][Applets][151]
+immutability=1
+plugin=org.kde.paneltransparencybutton
+
+[Containments][1][Applets][151][Configuration]
+PreloadWeight=0
+
+[Containments][1][Applets][151][Configuration][Appearance]
+transparencyEnabled=true
+
+[Containments][1][Applets][159]
+immutability=1
+plugin=org.kde.plasma.icontasks
+
+[Containments][1][Applets][159][Configuration]
+PreloadWeight=0
+
+[Containments][1][Applets][159][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Containments][1][Applets][159][Configuration][General]
+launchers=applications:firefox.desktop,applications:chromium.desktop,applications:steam.desktop,applications:com.teamviewer.TeamViewer.desktop,applications:code-oss.desktop,applications:Alacritty.desktop,applications:org.kde.dolphin.desktop,applications:systemsettings.desktop
 maxStripes=1
 middleClickAction=Close
 showOnlyCurrentScreen=true
 
-[Containments][1][Applets][136]
+[Containments][1][Applets][162]
 immutability=1
-plugin=org.kde.plasma.marginsseparator
+plugin=org.kde.plasma.panelspacer
 
-[Containments][1][Applets][136][Configuration]
+[Containments][1][Applets][162][Configuration]
 PreloadWeight=0
+
+[Containments][1][Applets][162][Configuration][General]
+length=1253
+
+[Containments][1][Applets][163]
+immutability=1
+plugin=org.kde.plasma.panelspacer
+
+[Containments][1][Applets][163][Configuration]
+PreloadWeight=0
+
+[Containments][1][Applets][163][Configuration][General]
+length=743
 
 [Containments][1][Applets][2][Configuration]
 PreloadWeight=92
@@ -100,7 +151,7 @@ immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][1][Applets][7][Configuration]
-PreloadWeight=92
+PreloadWeight=0
 SystrayContainmentId=8
 
 [Containments][1][Applets][7][Configuration][Containments][8]
@@ -164,10 +215,10 @@ DialogWidth=1920
 PreloadWeight=0
 
 [Containments][1][General]
-AppletOrder=84;136;132;7;115
+AppletOrder=143;84;163;159;162;151;145;7;115
 
 [Containments][119]
-ItemGeometriesHorizontal=Applet-121:1520,752,256,176,0;
+ItemGeometriesHorizontal=Applet-177:32,32,464,96,0;Applet-174:1504,768,304,176,0;
 activityId=5f1109cb-a8f1-4e0e-a168-912b439e89a9
 formfactor=0
 immutability=1
@@ -176,26 +227,38 @@ location=0
 plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
-[Containments][119][Applets][121]
+[Containments][119][Applets][174]
 immutability=1
 plugin=org.kde.fancyclock
 
-[Containments][119][Applets][121][Configuration]
+[Containments][119][Applets][174][Configuration]
 PreloadWeight=0
 
-[Containments][119][Applets][121][Configuration][ConfigDialog]
+[Containments][119][Applets][174][Configuration][ConfigDialog]
 DialogHeight=540
 DialogWidth=720
 
-[Containments][119][Applets][121][Configuration][General]
-dateFormat=ddd dd MMM yyyy
-dateOpacity=75
-textDateColor=#4effaf
-textTimeColor=#ff5500
+[Containments][119][Applets][174][Configuration][General]
+dateFormat=dd. MMMM yyyy
+enableDateShadow=false
+enableTimeShadow=false
+textDateFont=Zekton,12,-1,5,50,0,0,0,0,0
+textTimeFont=Zekton,12,-1,5,50,0,0,0,0,0
 timeFormat=HH:mm:ss
-timeOpacity=75
-useSystemColorForDate=false
-useSystemColorForTime=false
+useSystemFontForDate=false
+useSystemFontForTime=false
+
+[Containments][119][Applets][177]
+immutability=1
+plugin=org.kde.NowPlaying
+
+[Containments][119][Applets][177][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Containments][119][Applets][177][Configuration][General]
+fontFamily=Zekton
+preferredSource=spotify
 
 [Containments][119][ConfigDialog]
 DialogHeight=540
@@ -207,10 +270,10 @@ PreloadWeight=0
 [Containments][119][General]
 ToolBoxButtonState=topcenter
 ToolBoxButtonX=560
-ToolBoxButtonY=28
+ToolBoxButtonY=30
 
 [Containments][119][Wallpaper][org.kde.image][General]
-Image=file:///home/hynekm/.local/share/wallpapers/Sweet-Wallpapers/Sweet-space.png
+Image=file:///home/hynekm/.local/share/wallpapers/Sweet-Wallpapers/Sweet-S4.png
 SlidePaths=/usr/share/wallpapers
 
 [Containments][120]
@@ -233,39 +296,19 @@ PreloadWeight=0
 [Containments][120][General]
 ToolBoxButtonState=topcenter
 ToolBoxButtonX=560
-ToolBoxButtonY=30
 
 [Containments][120][Wallpaper][org.kde.image][General]
-Image=file:///home/hynekm/.local/share/wallpapers/Sweet-Wallpapers/Sweet-S3.png
+Image=file:///home/hynekm/.local/share/wallpapers/Sweet-Wallpapers/Sweet-space.png
 SlidePaths=/usr/share/wallpapers
 
 [Containments][125]
 activityId=
-formfactor=2
+formfactor=3
 immutability=1
 lastScreen=2
-location=3
+location=6
 plugin=org.kde.panel
 wallpaperplugin=org.kde.image
-
-[Containments][125][Applets][128]
-immutability=1
-plugin=org.kde.plasma.betterinlineclock
-
-[Containments][125][Applets][128][Configuration]
-PreloadWeight=0
-
-[Containments][125][Applets][128][Configuration][Appearance]
-customDateFormat=ddd dd.MM.
-customSpacing=5.0925925925925934
-dateFormat=customDate
-fixedFont=true
-fontSize=16
-showSeparator=false
-
-[Containments][125][Applets][128][Configuration][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
 
 [Containments][125][Applets][129]
 immutability=1
@@ -297,63 +340,107 @@ showOnlyCurrentScreen=true
 showWindowIcons=true
 wrapPage=true
 
-[Containments][125][Applets][135]
+[Containments][125][Applets][152]
 immutability=1
-plugin=org.kde.plasma.marginsseparator
+plugin=org.kde.paneltransparencybutton
 
-[Containments][125][Applets][135][Configuration]
+[Containments][125][Applets][152][Configuration]
 PreloadWeight=0
 
-[Containments][125][Applets][135][Configuration][ConfigDialog]
+[Containments][125][Applets][154]
+immutability=1
+plugin=org.kde.plasma.icontasks
+
+[Containments][125][Applets][154][Configuration]
+PreloadWeight=0
+
+[Containments][125][Applets][154][Configuration][ConfigDialog]
 DialogHeight=540
 DialogWidth=720
 
-[Containments][125][Applets][139]
-immutability=1
-plugin=org.kde.plasma.marginsseparator
-
-[Containments][125][Applets][139][Configuration]
-PreloadWeight=0
-
-[Containments][125][Applets][141]
-immutability=1
-plugin=org.kde.plasma.taskmanager
-
-[Containments][125][Applets][141][Configuration]
-PreloadWeight=0
-
-[Containments][125][Applets][141][Configuration][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
-
-[Containments][125][Applets][141][Configuration][General]
-launchers=applications:systemsettings.desktop,preferred://filemanager,preferred://browser,applications:spotify.desktop,applications:Alacritty.desktop
+[Containments][125][Applets][154][Configuration][General]
+indicateAudioStreams=false
+launchers=preferred://browser,applications:spotify.desktop,applications:teamspeak3.desktop,applications:org.kde.dolphin.desktop,applications:systemsettings.desktop
 maxStripes=1
 middleClickAction=Close
 showOnlyCurrentScreen=true
 
-[Containments][125][Applets][141][Shortcuts]
-global=
-
-[Containments][125][Applets][143]
+[Containments][125][Applets][160]
 immutability=1
-plugin=org.kde.plasma.kickoff
+plugin=org.kde.plasma.panelspacer
 
-[Containments][125][Applets][143][Configuration]
-PreloadWeight=100
+[Containments][125][Applets][160][Configuration]
+PreloadWeight=0
 
-[Containments][125][Applets][143][Configuration][General]
-favoritesPortedToKAstats=true
+[Containments][125][Applets][160][Configuration][General]
+length=1279
+
+[Containments][125][Applets][161]
+immutability=1
+plugin=org.kde.plasma.panelspacer
+
+[Containments][125][Applets][161][Configuration]
+PreloadWeight=0
+
+[Containments][125][Applets][161][Configuration][General]
+length=441
+
+[Containments][125][Applets][166]
+immutability=1
+plugin=org.kde.plasma.keyboardlayout
+
+[Containments][125][Applets][166][Configuration]
+PreloadWeight=0
+
+[Containments][125][Applets][166][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Containments][125][Applets][173]
+immutability=1
+plugin=org.kde.plasma.digitalclock
+
+[Containments][125][Applets][173][Configuration]
+PreloadWeight=0
+
+[Containments][125][Applets][173][Configuration][Appearance]
+customDateFormat=ddd dd.MM.
+dateFormat=custom
+fontFamily=Zekton
+
+[Containments][125][Applets][173][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Containments][125][Applets][176]
+immutability=1
+plugin=com.github.intika.kdeswitchpanel
+
+[Containments][125][Applets][176][Configuration]
+PreloadWeight=3
+
+[Containments][125][Applets][176][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Containments][125][Applets][176][Configuration][General]
+clickCommand=HideUnhide
+clickCommandID=PanelID1
+clickCommandID2=PanelID6
+icon=password-show-off
+
+[Containments][125][Applets][176][Shortcuts]
+global=Meta+S
 
 [Containments][125][ConfigDialog]
-DialogHeight=84
-DialogWidth=1920
+DialogHeight=1080
+DialogWidth=173
 
 [Containments][125][Configuration]
 PreloadWeight=0
 
 [Containments][125][General]
-AppletOrder=143;133;135;141;139;128;129
+AppletOrder=133;173;161;154;160;176;166;152;129
 
 [Containments][2][Applets][14][Configuration]
 PreloadWeight=42
@@ -409,7 +496,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][8][Applets][111][Configuration]
-PreloadWeight=82
+PreloadWeight=0
 
 [Containments][8][Applets][111][Configuration][ConfigDialog]
 DialogHeight=540
@@ -443,7 +530,7 @@ immutability=1
 plugin=org.kde.plasma.clipboard
 
 [Containments][8][Applets][140][Configuration]
-PreloadWeight=19
+PreloadWeight=0
 
 [Containments][8][Applets][15][Configuration]
 PreloadWeight=42
@@ -456,7 +543,7 @@ immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][8][Applets][18][Configuration]
-PreloadWeight=4
+PreloadWeight=0
 
 [Containments][8][Applets][19]
 immutability=1
@@ -498,12 +585,8 @@ weatherServiceProviders=wettercom
 DialogHeight=540
 DialogWidth=720
 
-[Containments][8][Applets][80]
-immutability=1
-plugin=org.kde.kdeconnect
-
 [Containments][8][Applets][80][Configuration]
-PreloadWeight=17
+PreloadWeight=42
 
 [Containments][8][Applets][81]
 immutability=1
@@ -527,7 +610,7 @@ immutability=1
 plugin=org.kde.plasma.devicenotifier
 
 [Containments][8][Applets][90][Configuration]
-PreloadWeight=4
+PreloadWeight=0
 
 [Containments][8][Applets][92]
 immutability=1
@@ -548,10 +631,29 @@ DialogWidth=720
 PreloadWeight=0
 
 [Containments][8][General]
-extraItems=org.kde.plasma.notifications,org.kde.plasma.mediacontroller,org.kde.plasma.printmanager,org.kde.plasma.devicenotifier,org.kde.kdeconnect,org.kde.plasma.networkmanagement,org.kde.plasma.nightcolorcontrol,org.kde.plasma.keyboardindicator,org.kde.plasma.bluetooth,org.kde.kscreen,org.kde.plasma.volume,org.kde.plasma.clipboard
-hiddenItems=Správce balíčků,MSM Notifier for Plasma5,steam,org.kde.plasma.nightcolorcontrol,org.kde.kscreen,KMix,Yakuake,Stacer
+extraItems=org.kde.plasma.notifications,org.kde.plasma.mediacontroller,org.kde.plasma.printmanager,org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.plasma.nightcolorcontrol,org.kde.plasma.keyboardindicator,org.kde.plasma.bluetooth,org.kde.kscreen,org.kde.plasma.volume,org.kde.plasma.clipboard
+hiddenItems=Správce balíčků,MSM Notifier for Plasma5,steam,org.kde.kscreen,KMix,Yakuake,Stacer,KDE Daemon
 knownItems=org.kde.plasma.keyboardlayout,org.kde.kdeconnect,org.kde.plasma.devicenotifier,org.kde.plasma.mediacontroller,org.kde.plasma.clipboard,org.kde.plasma.notifications,org.kde.plasma.battery,org.kde.plasma.printmanager,org.kde.plasma.networkmanagement,org.kde.plasma.nightcolorcontrol,org.kde.plasma.keyboardindicator,org.kde.plasma.bluetooth,org.kde.plasma.volume
-shownItems=KDE Daemon,org.kde.plasma.networkmanagement,org.kde.kdeconnect,org.kde.plasma.volume,org.kde.plasma.clipboard
+shownItems=org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.plasma.clipboard,org.kde.plasma.nightcolorcontrol
+
+[Containments119Appletsts][121][Configuration][General]
+dateFormat=ddd dd MMM yyyy
+dateOpacity=75
+timeFormat=HH:mm:ss
+timeOpacity=75
+useSystemColorForDate=false
+useSystemColorForTime=false
+
+[Containments119Appletsts][150][Configuration][General]
+fontFamily=Cantarell
+preferredSource=spotify
+
+[Containments120Appletsts][121][Configuration][General]
+textDateColor=#00aaff
+
+[Containments120Appletsts][150][Configuration][General]
+fontFamily=Cantarell
+preferredSource=spotify
 
 [Containments125Appletsts][124][Configuration][General]
 launchers=applications:systemsettings.desktop,preferred://browser,applications:Alacritty.desktop,applications:org.kde.dolphin.desktop,applications:spotify.desktop
@@ -559,6 +661,12 @@ middleClickAction=Close
 
 [Containments125Appletsts][129][Configuration][General]
 show_lockScreen=false
+
+[Containments1Appletsts][143][Configuration][General]
+alphaSort=true
+favoritesPortedToKAstats=true
+switchTabsOnHover=true
+systemFavorites=suspend\\,hibernate\\,reboot\\,shutdown
 
 [Containments1Appletsts][4][Configuration][General]
 launchers=applications:org.kde.dolphin.desktop,applications:firefox.desktop

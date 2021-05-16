@@ -1,13 +1,14 @@
 [KFileDialog Settings]
-Recent Files[$e]=alien-minimal.jpg,file:$HOME/Obrázky/sunset-2.webp,file:$HOME/Obrázky/vpb361yfed551.webp,file:$HOME/Obrázky/sunset.jpg
-Recent URLs[$e]=file:$HOME/Obrázky/,file:$HOME/,file:$HOME/Dokumenty/
+Recent Files[$e]=file:$HOME/.config/khotkeysrc,file:$HOME/.config/kglobalshortcutsrc,file:$HOME/Obrázky/sunset-2.webp,file:$HOME/Obrázky/sunset.jpg
+Recent URLs[$e]=file:$HOME/Obrázky/,file:$HOME/,file:$HOME/Dokumenty/,file:$HOME/.config/
 detailViewIconSize=16
+
+[KPropertiesDialog]
+DisplayPort-1 HDMI-A-1 Height 1920x1080=458
+DisplayPort-1 HDMI-A-1 Width 1920x1080=414
 
 [Notification Messages]
 really_clear_history=true
-
-[PlasmaTransientsConfig]
-PreloadWeight=42
 
 [PlasmaViews][Panel 1]
 alignment=1
@@ -17,7 +18,7 @@ panelVisibility=0
 maxLength=1920
 minLength=1920
 offset=0
-thickness=28
+thickness=30
 
 [PlasmaViews][Panel 1][Horizontal1366]
 maxLength=1366
@@ -28,13 +29,19 @@ thickness=24
 [PlasmaViews][Panel 1][Horizontal1920]
 maxLength=1920
 minLength=1920
-thickness=28
+thickness=30
+
+[PlasmaViews][Panel 125]
+panelVisibility=0
 
 [PlasmaViews][Panel 125][Defaults]
-thickness=30
+thickness=42
 
 [PlasmaViews][Panel 125][Horizontal1920]
 thickness=30
+
+[PlasmaViews][Panel 125][Vertical1080]
+thickness=42
 
 [PlasmaViews][Panel 43]
 alignment=132

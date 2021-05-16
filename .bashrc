@@ -72,10 +72,10 @@ if ${use_color} ; then
 	if [[ ${EUID} == 0 ]] ; then
 		PS1='\[\033[01;31m\][\h\[\033[01;36m\] \W\[\033[01;31m\]]\$\[\033[00m\] '
 	else
-		PS1='\[\033[01;32m\][\t] \[\033[01;31m\]\w\[\033[00m\] \$ '
+		PS1='\[\033[01;32m\]<\t> \[\033[01;34m\]\w\[\033[00m\] \$ '
 	fi
 
-	alias ls='ls -lag --group-directories-first --color=always'
+	alias ls='exa -lag --icons --group-directories-first --color=always'
 	alias grep='grep --colour=auto'
 	alias egrep='egrep --colour=auto'
 	alias fgrep='fgrep --colour=auto'

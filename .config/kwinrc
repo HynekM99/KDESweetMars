@@ -2,21 +2,27 @@
 update_info=kwin.upd:replace-scalein-with-scale,kwin.upd:port-minimizeanimation-effect-to-js,kwin.upd:port-scale-effect-to-js,kwin.upd:port-dimscreen-effect-to-js,kwin.upd:auto-bordersize,kwin.upd:animation-speed,kwin.upd:desktop-grid-click-behavior,kwin.upd:no-swap-encourage
 
 [Compositing]
+GLCore=true
 OpenGLIsUnsafe=false
+WindowsBlockCompositing=false
 
 [Desktops]
 Id_1=e0c60120-2f62-4488-aefc-f56f85f487d5
-Id_2=a1feb095-04ce-413c-adf4-f410117e7ae7
-Id_3=a619f23a-1037-4d5c-bf81-11873ffdde53
-Id_4=b1ba57e3-e07b-495b-87a2-6bc907cc2df6
-Id_5=3a42b71d-2cc3-4408-a170-7a49c82a3a2d
+Id_2=3a42b71d-2cc3-4408-a170-7a49c82a3a2d
 Name_1=1
 Name_2=2
-Name_3=3
-Name_4=4
-Name_5=5
-Number=5
-Rows=1
+Number=2
+Rows=2
+
+[Effect-Blur]
+BlurStrength=4
+NoiseStrength=0
+
+[Effect-MagicLamp]
+AnimationDuration=1000
+
+[Effect-MouseMark]
+Color=85,85,255
 
 [Effect-PresentWindows]
 BorderActivateAll=9
@@ -31,15 +37,34 @@ LongitudeAuto=13.6437
 NightTemperature=2500
 
 [Plugins]
+contrastEnabled=false
+coverswitchEnabled=true
 desktopgridEnabled=false
+flipswitchEnabled=true
+forceblurEnabled=true
+highlightwindowEnabled=true
 kwin4_effect_eyeonscreenEnabled=true
+kwin4_effect_fadeEnabled=false
+kwin4_effect_fadedesktopEnabled=true
+kwin4_effect_scaleEnabled=true
 kwin4_effect_windowapertureEnabled=false
+magnifierEnabled=true
+minimizeallEnabled=false
+screenedgeEnabled=false
+slideEnabled=false
+synchronizeskipswitcherEnabled=false
+videowallEnabled=false
+zoomEnabled=false
+
+[Script-forceblur]
+patterns=alacritty
 
 [TabBox]
+ActivitiesMode=0
 BorderActivate=9
 DesktopLayout=org.kde.breeze.desktop
 DesktopListLayout=org.kde.breeze.desktop
-LayoutName=org.kde.breeze.desktop
+LayoutName=thumbnail_grid
 
 [Windows]
 ActiveMouseScreen=true
@@ -51,7 +76,7 @@ WindowSnapZone=5
 [org.kde.kdecoration2]
 BorderSize=Tiny
 BorderSizeAuto=false
-ButtonsOnLeft=
+ButtonsOnLeft=BSF
 ButtonsOnRight=SIAX
 library=org.kde.kwin.aurorae
-theme=__aurorae__svg__Sweet-Mars-transparent
+theme=__aurorae__svg__Sweet-Mars

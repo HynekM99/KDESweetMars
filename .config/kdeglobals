@@ -31,7 +31,7 @@ DecorationHover=246,126,125
 ForegroundActive=61,174,233
 ForegroundInactive=148,154,167
 ForegroundLink=41,128,185
-ForegroundNegative=246,126,125
+ForegroundNegative=141,0,2
 ForegroundNeutral=247,159,121
 ForegroundNormal=224,226,231
 ForegroundPositive=202,231,185
@@ -39,15 +39,15 @@ ForegroundVisited=82,148,226
 
 [Colors:Selection]
 BackgroundAlternate=29,153,243
-BackgroundNormal=246,126,125
+BackgroundNormal=255,85,0
 DecorationFocus=246,126,125
 DecorationHover=246,126,125
 ForegroundActive=252,252,252
 ForegroundInactive=211,218,227
 ForegroundLink=253,188,75
-ForegroundNegative=246,126,125
+ForegroundNegative=141,0,2
 ForegroundNeutral=247,159,121
-ForegroundNormal=247,247,247
+ForegroundNormal=0,0,0
 ForegroundPositive=202,231,185
 ForegroundVisited=189,195,199
 
@@ -59,7 +59,7 @@ DecorationHover=246,126,125
 ForegroundActive=61,174,233
 ForegroundInactive=148,154,167
 ForegroundLink=41,128,185
-ForegroundNegative=246,126,125
+ForegroundNegative=141,0,2
 ForegroundNeutral=247,159,121
 ForegroundNormal=211,218,227
 ForegroundPositive=202,231,185
@@ -73,7 +73,7 @@ DecorationHover=246,126,125
 ForegroundActive=0,193,228
 ForegroundInactive=148,154,167
 ForegroundLink=82,148,226
-ForegroundNegative=246,126,125
+ForegroundNegative=141,0,2
 ForegroundNeutral=247,159,121
 ForegroundNormal=223,225,230
 ForegroundPositive=202,231,185
@@ -87,18 +87,22 @@ DecorationHover=246,126,125
 ForegroundActive=61,174,233
 ForegroundInactive=148,154,167
 ForegroundLink=41,128,185
-ForegroundNegative=246,126,125
+ForegroundNegative=141,0,2
 ForegroundNeutral=247,159,121
 ForegroundNormal=224,226,231
 ForegroundPositive=202,231,185
 ForegroundVisited=246,126,125
+
+[DirSelect Dialog]
+DirSelectDialog Size=852,598
+History Items[$e]=file:///hdd1
 
 [General]
 AllowKDEAppsToRememberWindowPositions=false
 BrowserApplication=firefox.desktop
 ColorScheme=SweetMars
 Name[cs_CZ]=Breeze Tmavé
-Name=Breeze Dark
+Name=Sweet-Mars
 TerminalApplication=alacritty
 TerminalService=Alacritty.desktop
 UseSystemBell=true
@@ -114,7 +118,6 @@ toolBarFont=Noto Sans,9,-1,5,50,0,0,0,0,0
 Theme=Tela-circle-orange-dark
 
 [KDE]
-AnimationDurationFactor=0.25
 LookAndFeelPackage=Sweet-Mars
 contrast=4
 widgetStyle=Breeze
@@ -131,7 +134,7 @@ Show Full Path=false
 Show Inline Previews=true
 Show Preview=false
 Show Speedbar=true
-Show hidden files=false
+Show hidden files=true
 Sort by=Name
 Sort directories first=true
 Sort reversed=false
@@ -148,6 +151,7 @@ Quit=
 [WM]
 activeBackground=47,52,63
 activeBlend=47,52,63
+activeFont=Zekton,10,-1,5,50,0,0,0,0,0
 activeForeground=211,218,227
 inactiveBackground=47,52,63
 inactiveBlend=47,52,63
